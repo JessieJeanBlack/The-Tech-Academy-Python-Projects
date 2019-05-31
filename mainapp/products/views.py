@@ -1,11 +1,7 @@
-
-
-
 from django.shortcuts import render, get_object_or_404, redirect
 from django.http import HttpResponse
 from .forms import ProductForm
 from .models import Product
-
 
 
 def admin_console(request):
@@ -34,7 +30,7 @@ def delete(request, pk):
     if request.method == 'POST':
         item.delete()
         return redirect('admin_console')
-    context = {"item": item,}
+    context = {'item': item, }
     return render(request, "products/confirmDelete.html", context)
 
 

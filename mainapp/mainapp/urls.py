@@ -1,5 +1,3 @@
-
-
 """mainapp URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
@@ -19,16 +17,13 @@ from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from django.conf.urls import include
 from django.contrib import admin
 from django.urls import path
-from .views import home
-from django.urls import path
-from django.contrib import admin
-import from other_app.views import home
-from my_app import views
+from . import views
+
 urlpatterns = [
-    path('', views.home, name='home'),
+    path('', views.home, name="home"),
     path('admin/', admin.site.urls),
     path('', include('products.urls')),
-    path('blog/', include('blog.urls'))
+
 ]
 
 urlpatterns += staticfiles_urlpatterns()
