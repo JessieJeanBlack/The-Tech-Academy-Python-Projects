@@ -135,7 +135,7 @@ ul.topnav li.icon {
 	transition: all 0.3s ease-in-out;
 	border-radius: 5px; /* 5px rounded corners */
     transition: 0.3s;
-	width: 80%;
+	width: 50%;
 	margin: 5px;
 	background-color: #fffaf4;
 	border: 1px solid #d6d6d6;
@@ -147,7 +147,7 @@ ul.topnav li.icon {
 /* form item container */
 .frmObject_container {
 	display: block;
-    width: 100%;
+    width: 80%;
     margin: 0 auto;
     padding: 0;
     text-align: center;
